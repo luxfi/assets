@@ -1,12 +1,12 @@
-# Trust Wallet Assets Info
+# assets
 
 ![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
 
 ## Overview
 
-Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
+Lux Network token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
 
-[Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.
+[Lux Network](https://lux.network) uses token logos from this source, alongside a number of other projects.
 
 The repository contains token info from several blockchains, info on dApps, staking validators, etc.
 For every token a logo and optional additional information is available (such data is not available on-chain).
@@ -69,10 +69,10 @@ There are also options for force-include and force-exclude in the config.
 
 ## Disclaimer
 
-Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
+Lux team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
 
-Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
-Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
+Lux team will reject projects that are deemed as scam or fraudulent after careful review.
+Lux team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
 
 Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will result in the asset being flagged as spam and possible removal from the repository.
 
