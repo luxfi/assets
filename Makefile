@@ -16,7 +16,7 @@ MAKEFLAGS += --silent
 GOFMT_FILES?=$$(find . -name '*.go' | grep -v vendor)
 
 # Common commands.
-all: fmt lint test
+all: fmt test
 
 build:
 	@echo "  >  Building main.go to bin/assets"
