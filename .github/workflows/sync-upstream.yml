@@ -1,0 +1,28 @@
+name: Sync upstream
+# Weekly merge of trustwallet/assets into luxfi/assets. The histories are
+# shared (fork), so a plain merge integrates new token logos; lux-specific
+# chains and tooling live in paths upstream never touches. Conflicts fail
+# the job for a human merge (`make sync-upstream` locally).
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: [self-hosted, linux, amd64]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Merge trustwallet/assets
+        run: |
+          git config user.name "lux-assets-sync"
+          git config user.email "dev@lux.network"
+          git remote add upstream https://github.com/trustwallet/assets.git || true
+          git fetch upstream master
+          git merge --no-edit upstream/master
+          git push origin HEAD:main
