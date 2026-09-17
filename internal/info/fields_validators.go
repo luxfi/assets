@@ -2,6 +2,7 @@ package info
 
 import (
 	"fmt"
+	"slices"
 	"strings"
 
 	str "github.com/trustwallet/assets-go-libs/strings"
@@ -190,10 +191,8 @@ func ValidateDecimals(decimals int) error {
 }
 
 func ValidateStatus(status string) error {
-	for _, f := range allowedStatusValues {
-		if f == status {
-			return nil
-		}
+	if slices.Contains(allowedStatusValues, status) {
+		return nil
 	}
 
 	return fmt.Errorf("%w: allowed status field values: %s", validation.ErrInvalidField,

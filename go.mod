@@ -1,6 +1,6 @@
 module github.com/trustwallet/assets
 
-go 1.26.4
+go 1.27.1
 
 require (
 	github.com/sirupsen/logrus v1.9.4
